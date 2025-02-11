@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import StepIcon from '@/components/StepIcon/index.tsx';
+import StepIcon, { StepIconProps } from '@/components/StepIcon/index.tsx';
 
 import { TbArrowsMinimize } from 'react-icons/tb';
 
@@ -15,10 +15,10 @@ import rocket from '../../public/icons/rocket.png';
 import party from '../../public/icons/party.png';
 
 export default function Home() {
-
-    const icons = [
+  const icons: StepIconProps[] = [
     {
       icon: plane,
+      rout: '/general',
       height: 45,
       position: '',
       divider:
@@ -26,6 +26,7 @@ export default function Home() {
     },
     {
       icon: page,
+      rout: '/general',
       height: 82.5,
       position: 'left-[15%]',
       divider:
@@ -33,6 +34,7 @@ export default function Home() {
     },
     {
       icon: light,
+      rout: '/general',
       height: 60,
       position: 'left-[27.5%]',
       divider:
@@ -40,6 +42,7 @@ export default function Home() {
     },
     {
       icon: graph,
+      rout: '/general',
       height: 37.5,
       position: 'left-[36.5%]',
       divider:
@@ -47,6 +50,7 @@ export default function Home() {
     },
     {
       icon: note,
+      rout: '/general',
       height: 30,
       position: 'left-[50%]',
       divider:
@@ -54,6 +58,7 @@ export default function Home() {
     },
     {
       icon: map,
+      rout: '/general',
       height: 90,
       position: 'left-[61.5%]',
       divider:
@@ -61,6 +66,7 @@ export default function Home() {
     },
     {
       icon: rocket,
+      rout: '/general',
       height: 70,
       position: 'left-[78.5%]',
       divider:
@@ -68,6 +74,7 @@ export default function Home() {
     },
     {
       icon: party,
+      rout: '/general',
       height: 100,
       position: 'left-[90%]',
       divider:
@@ -104,6 +111,7 @@ export default function Home() {
               height={item.height}
               position={item.position}
               divider={item.divider}
+              rout={item.rout}
             />
           ))}
         </div>
