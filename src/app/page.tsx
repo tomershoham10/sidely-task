@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import StepIcon from '@/components/StepIcon/page';
+import StepIcon from '@/components/StepIcon/index.tsx';
 
 import { TbArrowsMinimize } from 'react-icons/tb';
 
